@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MausamApplication/app/src/main/res/drawable/card_back.xml" value="0.1835" />
+        <entry key="..\:/MausamApplication/app/src/main/res/layout/activity_login.xml" value="0.17" />
+        <entry key="..\:/MausamApplication/app/src/main/res/layout/activity_login_mausam.xml" value="0.22" />
+        <entry key="..\:/MausamApplication/app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="..\:/MausamApplication/app/src/main/res/layout/activity_news_detail.xml" value="0.292772186642269" />
+        <entry key="..\:/MausamApplication/app/src/main/res/layout/activity_news_section.xml" value="0.2" />
+        <entry key="..\:/MausamApplication/app/src/main/res/layout/activity_sign_in.xml" value="0.21" />
+        <entry key="..\:/MausamApplication/app/src/main/res/layout/news_rv_item.xml" value="0.33" />
+        <entry key="..\:/MausamApplication/app/src/main/res/layout/weather_rv_item.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

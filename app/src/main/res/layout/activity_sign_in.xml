@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signIn">
+
+    <ImageView
+        android:id="@+id/idIVRIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mausampic" />
+    <TextView
+        android:id="@+id/idTVReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:layout_below="@id/idIVRIcon"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        />
+
+    <EditText
+        android:id="@+id/idusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idIVRIcon"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:hint="Enter uniq username (text only)" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idusername"
+        android:id="@+id/idpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idForgotp"
+        android:layout_below="@id/idpassword"
+        android:layout_margin="5dp"
+        android:text="Forgot Password ??"
+        android:textSize="24px"
+        android:fontFamily="sans-serif"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/idForgotp"
+        android:text="Login"
+        android:id="@+id/idBtnSignLogin"
+        android:backgroundTint="@color/green"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTVNotReg"
+        android:layout_below="@id/idBtnSignLogin"
+        android:text="Not Registered Yet?"
+        android:layout_margin="10dp"
+        android:textColorHighlight="@color/green"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnRegNow"
+        android:layout_below="@id/idTVNotReg"
+        android:backgroundTint="@color/black"
+        android:text="Register Now"
+        android:layout_centerHorizontal="true"
+
+        />
+</RelativeLayout>
