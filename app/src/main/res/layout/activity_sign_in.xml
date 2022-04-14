@@ -25,7 +25,7 @@
         android:textColor="@color/white"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif"
         />
 
@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/idusername"
         android:id="@+id/idpassword"
+        android:hint="Enter paasword"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
@@ -58,14 +59,15 @@
         android:textSize="24px"
         android:fontFamily="sans-serif"
         />
+
     <Button
+        android:id="@+id/idBtnSignLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/idForgotp"
-        android:text="Login"
-        android:id="@+id/idBtnSignLogin"
+        android:layout_centerHorizontal="true"
         android:backgroundTint="@color/green"
+        android:text="Login"
 
         />
     <TextView
