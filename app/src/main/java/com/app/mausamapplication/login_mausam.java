@@ -39,10 +39,10 @@ public class login_mausam extends AppCompatActivity {
                 else {
                     Boolean checkuser=DB.checkusername(user);
                         if (checkuser==false){
-                            Boolean insertup=DB.insertData(user,pass,email);
-                            if (insertup==true){
+                            Boolean insert=DB.insertData(user,pass);
+                            if (insert==true){
                                 Toast.makeText(login_mausam.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-                                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                                Intent intent=new Intent(getApplicationContext(),user_profile.class);
                                 startActivity(intent);
                             }
                             else{

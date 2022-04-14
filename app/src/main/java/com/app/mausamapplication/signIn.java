@@ -25,6 +25,13 @@ public class signIn extends AppCompatActivity {
         password=(EditText)findViewById(R.id.idpassword);
         DB=new DBHelper(this);
 
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RegisterScreen();
+            }
+        });
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,7 +45,7 @@ public class signIn extends AppCompatActivity {
                     Boolean checkuserpass=DB.checkusernamepassword(user,pass);
                     if (checkuserpass==true){
                         Toast.makeText(signIn.this, "Login Successfull", Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                        Intent intent=new Intent(getApplicationContext(),user_profile.class);
                         startActivity(intent);
                     }
                     else {
