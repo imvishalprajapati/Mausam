@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,25 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".user_profile"
     android:id="@+id/RelativeLyout"
+
     >
-
-    <ImageButton
-        android:id="@+id/idBtnback"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
-        android:src="@drawable/ic_back_arrow_mausam" />
-
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbaar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700">
+    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:id="@+id/idLinearlyoutp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idBtnback"
-        android:layout_marginTop="45dp"
+        android:layout_below="@id/idToolbaar"
+        android:layout_marginTop="25dp"
         android:orientation="vertical">
 
         <ImageView

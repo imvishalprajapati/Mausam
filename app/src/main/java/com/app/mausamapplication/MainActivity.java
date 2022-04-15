@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private int PERMISSION_CODE=1;
     private String cityName;
     private Button button;
-    private Button buttonp;
+    private Button buttonp,buttonMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +75,14 @@ public class MainActivity extends AppCompatActivity {
         weatherRV.setAdapter(weatherRVAdapter);
         button= (Button) findViewById(R.id.idButtonNews);
         buttonp= (Button) findViewById(R.id.idWprofile);
+        buttonMusic=(Button)findViewById(R.id.idWBtnMusic) ;
+
+        buttonMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Comming Soon", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -125,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                         cityName=city;
                     }
                     else {
-                        Log.d("TAG","City Not Found");
+                        Log.d("TAG","Connect to Internet ");
                         Toast.makeText(this,"..",Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -195,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void ProfileScreen(){
-        Intent intent = new Intent(this,login_mausam.class);
+        Intent intent = new Intent(this,signIn.class);
         startActivity(intent);
     }
 }

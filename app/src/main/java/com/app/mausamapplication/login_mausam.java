@@ -32,17 +32,17 @@ public class login_mausam extends AppCompatActivity {
                 String user=username.getText().toString();
                 String pass=password.getText().toString();
                 String email=mail.getText().toString();
-                String name=uname.getText().toString();
+                String nameu=uname.getText().toString();
 
                 if (user.equals("")||pass.equals("")||email.equals(""))
                     Toast.makeText(login_mausam.this, "Pls Fill All details", Toast.LENGTH_SHORT).show();
                 else {
                     Boolean checkuser=DB.checkusername(user);
                         if (checkuser==false){
-                            Boolean insert=DB.insertData(user,pass);
+                            Boolean insert=DB.insertData(user,pass,email,nameu);
                             if (insert==true){
                                 Toast.makeText(login_mausam.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-                                Intent intent=new Intent(getApplicationContext(),user_profile.class);
+                                Intent intent=new Intent(getApplicationContext(),signIn.class);
                                 startActivity(intent);
                             }
                             else{
